@@ -1,0 +1,99 @@
+.home {
+  height: 100%;
+  width: 100%;
+  font-family: CaveatReg;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f25c54b7), to(#f25c54ad)), url(../assets/hero.jpg);
+  background-image: linear-gradient(to right, #f25c54b7, #f25c54ad), url(../assets/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .circle-holder {
+  width: 442px;
+  height: 402px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.home .circle-holder .little-circle {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  background: #fcbcb8;
+  border-radius: 100px;
+  margin-left: 274px;
+  margin-top: -234px;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .circle-holder .little-circle .lctext {
+  width: 105px;
+  height: 38px;
+  text-align: center;
+}
+.home .circle-holder .little-circle .lctext p {
+  font-size: 10px;
+  font-style: italic;
+}
+.home .circle-holder .big-circle {
+  width: 358px;
+  height: 358px;
+  background: #ffd972;
+  border-radius: 200px;
+  margin-right: 84px;
+  margin-bottom: -44px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .circle-holder .big-circle .bctext {
+  width: 168px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.home .circle-holder .big-circle .bctext h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.home .circle-holder .big-circle .bctext p {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home .circle-holder .little-circle {
+    margin-left: 200px;
+    margin-top: -280px;
+  }
+}

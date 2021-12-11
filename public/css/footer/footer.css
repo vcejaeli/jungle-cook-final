@@ -1,0 +1,179 @@
+.footer {
+  width: 100%;
+  height: 19px;
+  margin: 0 40px 26px 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px;
+  margin-bottom: 22px;
+}
+.footer__content {
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 20px;
+}
+.footer__copyright {
+  min-width: 145px;
+  height: 100%;
+  margin-right: 58px;
+  padding: 0px;
+}
+.footer__copyright p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__nav {
+  width: 638px;
+  height: 100%;
+  margin-right: 99px;
+}
+.footer__nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__nav ul li {
+  display: inline-block;
+}
+.footer__nav ul li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+.footer__nav ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.footer__nav ul li a:hover::before {
+  color: #A7E8BD;
+  -webkit-text-decoration: underline 2px solid #000;
+          text-decoration: underline 2px solid #000;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.footer__icons {
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.footer__icons:hover {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 19px;
+    margin: 0 40px 26px 40px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .footer {
+    max-width: 100%;
+    height: 67px;
+    margin: 0 auto;
+  }
+  .footer__content {
+    display: inline-table;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .footer__copyright {
+    float: left;
+    margin-right: 0;
+    height: 19px;
+  }
+  .footer__icons {
+    height: 19px;
+    width: 29px;
+    float: left;
+  }
+  .footer__nav {
+    height: 33px;
+    width: 270px;
+    float: left;
+    margin-right: 0;
+  }
+  .footer__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav ul li a {
+    margin-right: 5px;
+  }
+}
